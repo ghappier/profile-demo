@@ -1,0 +1,12 @@
+service:
+    prop1: service-prod-prop1
+    prop2: service-prod-prop2
+    prop3: service-prod-prop3
+spring:
+    profiles:
+        include: service
+    datasource:
+        name: dev
+        url: jdbc:mysql://localhost:3306/sst?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8&allowMultiQueries=true
+        username: sst
+        password: sst

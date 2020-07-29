@@ -1,0 +1,9 @@
+
+spring:
+    profiles:
+        include: commons-prod,service-prod,utils-prod #application.xml中引用可以用active，application-YY.xml中引用必须用include
+server:
+    tomcat:
+        basedir: /usr/local/profile-demo/temp
+log:
+    home: /usr/local/profile-demo/logs
